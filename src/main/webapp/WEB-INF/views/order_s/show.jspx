@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_genmymodel_domain_Order_" object="${order_}" path="/order_s" z="OGR0h7Ndp+EWiMqrkiUsUJ/t1JU=">
+        <field:display date="true" dateTimePattern="${order__number__date_format}" field="number_" id="s_com_genmymodel_domain_Order__number_" object="${order_}" z="pI1CuuahK5R6cGb0oB2+LzKJFUg="/>
+        <field:display date="true" dateTimePattern="${order__ordered_date_format}" field="ordered" id="s_com_genmymodel_domain_Order__ordered" object="${order_}" z="tpTjKWiNva2Voqc0U7nDv1xVcbM="/>
+        <field:display field="shipped" id="s_com_genmymodel_domain_Order__shipped" object="${order_}" z="XLD0PPd/DvfMBb1PhAJS68qyJqE="/>
+        <field:display field="shipTo" id="s_com_genmymodel_domain_Order__shipTo" object="${order_}" z="YsYZFoC6FZposA7wFbGP4t2yMvg="/>
+        <field:display field="total" id="s_com_genmymodel_domain_Order__total" object="${order_}" z="D/9gk7O6UZM5QMD7uD4VURIPzXE="/>
+        <field:display field="status" id="s_com_genmymodel_domain_Order__status" object="${order_}" z="g7yF1o1qOIFwaKOSXGQYhJoYtc4="/>
+        <field:display field="account" id="s_com_genmymodel_domain_Order__account" object="${order_}" z="VZo0a8K80OUDYMWgmJwmTZrSfj0="/>
+    </page:show>
+</div>

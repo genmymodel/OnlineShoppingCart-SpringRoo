@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_genmymodel_domain_Order_" items="${order_s}" z="LDyBLD2YFJYDj5GTfY3mHrCjMx0=">
+        <table:table data="${order_s}" id="l_com_genmymodel_domain_Order_" path="/order_s" z="OMyQOLc1v6A9ncvqEVt2wkgUA/A=">
+            <table:column date="true" dateTimePattern="${order__number__date_format}" id="c_com_genmymodel_domain_Order__number_" property="number_" z="WJEQTjkBXY7BOFF6mEiiOrgDSUM="/>
+            <table:column date="true" dateTimePattern="${order__ordered_date_format}" id="c_com_genmymodel_domain_Order__ordered" property="ordered" z="U+KVLeZNu0ZVn8J38ODa1vgjvCU="/>
+            <table:column id="c_com_genmymodel_domain_Order__shipped" property="shipped" z="dlmPDT65DocsZ/jZ7lK85n0NAxs="/>
+            <table:column id="c_com_genmymodel_domain_Order__shipTo" property="shipTo" z="xX64zI11ySubg6of61xYxWR8NDY="/>
+            <table:column id="c_com_genmymodel_domain_Order__total" property="total" z="7ct2eIB757OyG4xp8ioCagu95Bc="/>
+            <table:column id="c_com_genmymodel_domain_Order__status" property="status" z="SmAIGZL06OvzBlyjNhW45lyprMg="/>
+        </table:table>
+    </page:list>
+</div>

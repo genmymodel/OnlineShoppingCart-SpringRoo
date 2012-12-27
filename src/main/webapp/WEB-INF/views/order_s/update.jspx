@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_genmymodel_domain_Order_" modelAttribute="order_" path="/order_s" versionField="Version" z="5qEjVksU3f6Sq0TDS8j3uhHEE7s=">
+        <field:datetime dateTimePattern="${order__number__date_format}" field="number_" id="c_com_genmymodel_domain_Order__number_" z="j7XVXtLR9LcNm5TL68KTG/uAn7I="/>
+        <field:datetime dateTimePattern="${order__ordered_date_format}" field="ordered" id="c_com_genmymodel_domain_Order__ordered" z="BHYEbgFg3TBJUNG0yFbQjckzxJY="/>
+        <field:input field="shipped" id="c_com_genmymodel_domain_Order__shipped" z="mDsUUWssvkYarub66rCtUjdufEg="/>
+        <field:input field="shipTo" id="c_com_genmymodel_domain_Order__shipTo" z="qHkgOTZJyJ0KpcLPXNa3hwRFkIQ="/>
+        <field:select field="total" id="c_com_genmymodel_domain_Order__total" items="${orderstatuses}" path="orderstatuses" z="M13QiXbKFHkK9N5/wUwtsPUhCYs="/>
+        <field:input field="status" id="c_com_genmymodel_domain_Order__status" z="2whfbznOlrq789KT4KsUEu78kdo="/>
+        <field:select field="account" id="c_com_genmymodel_domain_Order__account" itemValue="id" items="${accounts}" path="/accounts" z="DEwdBZ2qle5AB5kt3c0AHCU7xDM="/>
+    </form:update>
+</div>

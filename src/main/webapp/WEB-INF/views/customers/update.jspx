@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_genmymodel_domain_Customer" modelAttribute="customer" path="/customers" versionField="Version" z="/fWn/RguFNTQJvJdFB+wN6trx2o=">
+        <field:input field="id_" id="c_com_genmymodel_domain_Customer_id_" z="Sm8QCrVX7U0iuaIdrT5fWWqGywo="/>
+        <field:input field="address" id="c_com_genmymodel_domain_Customer_address" z="7FW/G5rN/G0FV3G5PGF6zA5i7ss="/>
+        <field:input field="phone" id="c_com_genmymodel_domain_Customer_phone" z="ZQeQFdLxcZK5+YGgheGmLOj1rFg="/>
+        <field:input field="email" id="c_com_genmymodel_domain_Customer_email" validationMessageCode="field_invalid_email" z="Y0OYeYyxUV2XrXchzDoF3UqfeZ4="/>
+        <field:select field="webuser" id="c_com_genmymodel_domain_Customer_webuser" itemValue="id" items="${webusers}" path="/webusers" z="t5tdpLz83W+6M/Hups+8n0micgM="/>
+        <field:select field="acc" id="c_com_genmymodel_domain_Customer_acc" itemValue="id" items="${accounts}" path="/accounts" z="4CtQKn5x00I5mA+0DQuICGGXJN8="/>
+    </form:update>
+</div>

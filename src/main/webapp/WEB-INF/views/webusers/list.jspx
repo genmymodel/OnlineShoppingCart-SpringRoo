@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_genmymodel_domain_WebUser" items="${webusers}" z="tVDoDA/VVgKg/JTUc3R4wIvtoQk=">
+        <table:table data="${webusers}" id="l_com_genmymodel_domain_WebUser" path="/webusers" z="ukTUMSA+3rHkhTcRLTeP8WnoogI=">
+            <table:column id="c_com_genmymodel_domain_WebUser_login" property="login" z="DFD16eB7xyS9nfNn7GTkxHG83BI="/>
+            <table:column id="c_com_genmymodel_domain_WebUser_password_" property="password_" z="hZePUK4mdsEDNI5Dek1WiBSCA4I="/>
+            <table:column id="c_com_genmymodel_domain_WebUser_state_" property="state_" z="5gVFxqxDk5XH/ytZ9UVfLhY85XA="/>
+            <table:column id="c_com_genmymodel_domain_WebUser_customer" property="customer" z="5gurCuJHKEhzx+Qky6erBYXkTCI="/>
+            <table:column id="c_com_genmymodel_domain_WebUser_shoppincart" property="shoppincart" z="xXvke+95wcAAYZSWwfXeLQo6AXQ="/>
+        </table:table>
+    </page:list>
+</div>

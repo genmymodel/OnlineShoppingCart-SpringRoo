@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_genmymodel_domain_Customer" object="${customer}" path="/customers" z="TyMhgeZQE7kbdYQgHh3WioQit5g=">
+        <field:display field="id_" id="s_com_genmymodel_domain_Customer_id_" object="${customer}" z="GL4fATQpG9inqY3SDAVVmpxsJBQ="/>
+        <field:display field="address" id="s_com_genmymodel_domain_Customer_address" object="${customer}" z="A3K8c/SuEpKB4N2I+ioM7SJWCwM="/>
+        <field:display field="phone" id="s_com_genmymodel_domain_Customer_phone" object="${customer}" z="MFolbiR+kq0ogQxgwRboNfurtj8="/>
+        <field:display field="email" id="s_com_genmymodel_domain_Customer_email" object="${customer}" z="gPgtK+3IIjn5L4RxQIM9Di1CrUU="/>
+        <field:display field="webuser" id="s_com_genmymodel_domain_Customer_webuser" object="${customer}" z="2BaRPbSqLsiivWSS5r/QuEaIjUo="/>
+        <field:display field="acc" id="s_com_genmymodel_domain_Customer_acc" object="${customer}" z="nyt+jlKlODbhE3YvIbzsG+xBs9o="/>
+    </page:show>
+</div>
