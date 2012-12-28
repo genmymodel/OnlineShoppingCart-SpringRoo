@@ -10,8 +10,6 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJpaActiveRecord(sequenceName = "PRODUCT_SEQ")
 public class Product {
 
-    private long id_;
-
     private String name_;
 
     private String description;

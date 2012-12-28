@@ -4,7 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_com_genmymodel_shoppingcart_domain_Customer" items="${customers}" z="qy0q457DavRiyc6w3M+XmU0Au1s=">
         <table:table data="${customers}" id="l_com_genmymodel_shoppingcart_domain_Customer" path="/customers" z="F/Z+nsZ1cMATLS95h/mGvpxvYLE=">
-            <table:column id="c_com_genmymodel_shoppingcart_domain_Customer_id_" property="id_" z="9e67AuF0Ag4sqnFj2W83FHUbv4A="/>
             <table:column id="c_com_genmymodel_shoppingcart_domain_Customer_address" property="address" z="f60acaJmMHGLmhHuBsnoc6XHGWs="/>
             <table:column id="c_com_genmymodel_shoppingcart_domain_Customer_phone" property="phone" z="+OyXiINjiWm9xRIfJWQDRQGQePo="/>
             <table:column id="c_com_genmymodel_shoppingcart_domain_Customer_email" property="email" z="IvuX+M1U7FRZopV+8gxHMNvvx9s="/>

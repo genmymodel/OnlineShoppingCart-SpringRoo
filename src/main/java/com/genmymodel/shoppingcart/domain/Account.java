@@ -15,8 +15,6 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJpaActiveRecord(sequenceName = "ACCOUNT_SEQ")
 public class Account {
 
-    private long id_;
-
     private Date billingAddress;
 
     private Date open_;

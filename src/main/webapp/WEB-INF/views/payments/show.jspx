@@ -3,7 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_com_genmymodel_shoppingcart_domain_Payment" object="${payment}" path="/payments" z="+BFZmZ2kGvRX3dgGXwIqZRSgOR8=">
-        <field:display date="true" dateTimePattern="${payment_id__date_format}" field="id_" id="s_com_genmymodel_shoppingcart_domain_Payment_id_" object="${payment}" z="5KQ1yzrzZH3i8smucGb/TA0w37Y="/>
         <field:display field="paidDate" id="s_com_genmymodel_shoppingcart_domain_Payment_paidDate" object="${payment}" z="6J6xUqsS/6wshlPzQ98t7XMspeg="/>
         <field:display field="total" id="s_com_genmymodel_shoppingcart_domain_Payment_total" object="${payment}" z="FsagVXmPVEXsfoMH7NRqzK77dtI="/>
         <field:display field="details" id="s_com_genmymodel_shoppingcart_domain_Payment_details" object="${payment}" z="Ad3bYkYpSS+8lr63kjBjfNBZVXY="/>

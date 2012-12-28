@@ -3,7 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_com_genmymodel_shoppingcart_domain_Account" modelAttribute="account" path="/accounts" versionField="Version" z="isZhIDDfdnRJWRxZBrO6BYLQ6dU=">
-        <field:input field="id_" id="c_com_genmymodel_shoppingcart_domain_Account_id_" z="e4Dmhd4yWDCFWzvkBfNECHAnjHU="/>
         <field:datetime dateTimePattern="${account_billingaddress_date_format}" field="billingAddress" id="c_com_genmymodel_shoppingcart_domain_Account_billingAddress" z="BOIVnDpOlh21ffublYdcnbzQOAc="/>
         <field:datetime dateTimePattern="${account_open__date_format}" field="open_" id="c_com_genmymodel_shoppingcart_domain_Account_open_" z="Wbdn/d271EnIGotSwcEku4YboqA="/>
         <field:checkbox field="closed" id="c_com_genmymodel_shoppingcart_domain_Account_closed" z="yRSJfjVEEJjWmprkl8ZeCtZuh/4="/>

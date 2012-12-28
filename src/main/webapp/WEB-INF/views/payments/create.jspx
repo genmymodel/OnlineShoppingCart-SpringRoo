@@ -3,7 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_com_genmymodel_shoppingcart_domain_Payment" modelAttribute="payment" path="/payments" render="${empty dependencies}" z="ZbMCypD4suR+XxEeWuPGKWhkHqE=">
-        <field:datetime dateTimePattern="${payment_id__date_format}" field="id_" id="c_com_genmymodel_shoppingcart_domain_Payment_id_" z="Ed+qmoqexqVlKVA4LgI52ze8MQs="/>
         <field:input field="paidDate" id="c_com_genmymodel_shoppingcart_domain_Payment_paidDate" z="snhYtUSJYBLgihkT7+7t+C8JeFU="/>
         <field:input field="total" id="c_com_genmymodel_shoppingcart_domain_Payment_total" z="vSEsKgjgitShgqRSooymHx/+63I="/>
         <field:input field="details" id="c_com_genmymodel_shoppingcart_domain_Payment_details" z="UUKap0Kb73/DMrCm0ww6SmwLQ5E="/>

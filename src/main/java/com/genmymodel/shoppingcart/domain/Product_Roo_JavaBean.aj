@@ -8,14 +8,6 @@ import com.genmymodel.shoppingcart.domain.Product;
 
 privileged aspect Product_Roo_JavaBean {
     
-    public long Product.getId_() {
-        return this.id_;
-    }
-    
-    public void Product.setId_(long id_) {
-        this.id_ = id_;
-    }
-    
     public String Product.getName_() {
         return this.name_;
     }

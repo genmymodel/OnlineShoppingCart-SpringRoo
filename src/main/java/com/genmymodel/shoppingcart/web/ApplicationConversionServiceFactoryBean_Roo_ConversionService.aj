@@ -23,7 +23,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Account, String> ApplicationConversionServiceFactoryBean.getAccountToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.genmymodel.shoppingcart.domain.Account, java.lang.String>() {
             public String convert(Account account) {
-                return new StringBuilder().append(account.getId_()).append(' ').append(account.getBillingAddress()).append(' ').append(account.getOpen_()).append(' ').append(account.getIsClosed()).toString();
+                return new StringBuilder().append(account.getBillingAddress()).append(' ').append(account.getOpen_()).append(' ').append(account.getIsClosed()).toString();
             }
         };
     }
@@ -47,7 +47,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Customer, String> ApplicationConversionServiceFactoryBean.getCustomerToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.genmymodel.shoppingcart.domain.Customer, java.lang.String>() {
             public String convert(Customer customer) {
-                return new StringBuilder().append(customer.getId_()).append(' ').append(customer.getAddress()).append(' ').append(customer.getPhone()).append(' ').append(customer.getEmail()).toString();
+                return new StringBuilder().append(customer.getAddress()).append(' ').append(customer.getPhone()).append(' ').append(customer.getEmail()).toString();
             }
         };
     }
@@ -119,7 +119,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Payment, String> ApplicationConversionServiceFactoryBean.getPaymentToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.genmymodel.shoppingcart.domain.Payment, java.lang.String>() {
             public String convert(Payment payment) {
-                return new StringBuilder().append(payment.getId_()).append(' ').append(payment.getPaidDate()).append(' ').append(payment.getTotal()).append(' ').append(payment.getDetails()).toString();
+                return new StringBuilder().append(payment.getPaidDate()).append(' ').append(payment.getTotal()).append(' ').append(payment.getDetails()).toString();
             }
         };
     }
@@ -143,7 +143,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Product, String> ApplicationConversionServiceFactoryBean.getProductToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.genmymodel.shoppingcart.domain.Product, java.lang.String>() {
             public String convert(Product product) {
-                return new StringBuilder().append(product.getId_()).append(' ').append(product.getName_()).append(' ').append(product.getDescription()).toString();
+                return new StringBuilder().append(product.getName_()).append(' ').append(product.getDescription()).toString();
             }
         };
     }

@@ -3,7 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_com_genmymodel_shoppingcart_domain_Customer" modelAttribute="customer" path="/customers" render="${empty dependencies}" z="h+PDMs0SvMw5582gt9IINj+yqUI=">
-        <field:input field="id_" id="c_com_genmymodel_shoppingcart_domain_Customer_id_" z="zDoLShTxW+yBxl9uC4ho8NlDYGg="/>
         <field:input field="address" id="c_com_genmymodel_shoppingcart_domain_Customer_address" z="LLjiFLqhTB9YnofuT62vUVywlGU="/>
         <field:input field="phone" id="c_com_genmymodel_shoppingcart_domain_Customer_phone" z="/CiQoAK5oeog4En/nQy1Ndhpngs="/>
         <field:input field="email" id="c_com_genmymodel_shoppingcart_domain_Customer_email" validationMessageCode="field_invalid_email" z="2PIc5Hbx++07GB50rZ5iZjrwjrI="/>

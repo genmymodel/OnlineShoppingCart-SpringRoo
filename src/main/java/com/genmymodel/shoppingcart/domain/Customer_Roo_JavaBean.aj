@@ -9,14 +9,6 @@ import com.genmymodel.shoppingcart.domain.WebUser;
 
 privileged aspect Customer_Roo_JavaBean {
     
-    public long Customer.getId_() {
-        return this.id_;
-    }
-    
-    public void Customer.setId_(long id_) {
-        this.id_ = id_;
-    }
-    
     public String Customer.getAddress() {
         return this.address;
     }

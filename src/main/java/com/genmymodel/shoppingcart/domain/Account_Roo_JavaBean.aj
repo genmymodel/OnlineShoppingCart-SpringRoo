@@ -12,14 +12,6 @@ import java.util.Set;
 
 privileged aspect Account_Roo_JavaBean {
     
-    public long Account.getId_() {
-        return this.id_;
-    }
-    
-    public void Account.setId_(long id_) {
-        this.id_ = id_;
-    }
-    
     public Date Account.getBillingAddress() {
         return this.billingAddress;
     }

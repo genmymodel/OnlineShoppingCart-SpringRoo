@@ -5,17 +5,8 @@ package com.genmymodel.shoppingcart.domain;
 
 import com.genmymodel.shoppingcart.domain.Account;
 import com.genmymodel.shoppingcart.domain.Payment;
-import java.util.Date;
 
 privileged aspect Payment_Roo_JavaBean {
-    
-    public Date Payment.getId_() {
-        return this.id_;
-    }
-    
-    public void Payment.setId_(Date id_) {
-        this.id_ = id_;
-    }
     
     public double Payment.getPaidDate() {
         return this.paidDate;

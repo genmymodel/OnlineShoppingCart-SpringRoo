@@ -12,19 +12,16 @@ enum constant --name Delivered
 enum constant --name Closed
 
 entity jpa --class ~.domain.Customer --sequenceName CUSTOMER_SEQ
-field other --fieldName id_ --type long 
 field string --fieldName address
 field string --fieldName phone
 field string --fieldName email
 entity jpa --class ~.domain.Payment --sequenceName PAYMENT_SEQ
-field other --fieldName id_ --type java.util.Date 
 field number --fieldName paidDate --type java.lang.Double --primitive
 field string --fieldName total
 field string --fieldName details
 entity jpa --class ~.domain.ShoppinCart --sequenceName SHOPPINCART_SEQ
 field other --fieldName creationDate --type java.util.Date 
 entity jpa --class ~.domain.Account --sequenceName ACCOUNT_SEQ
-field other --fieldName id_ --type long 
 field other --fieldName billingAddress --type java.util.Date 
 field other --fieldName open_ --type java.util.Date 
 field boolean --fieldName closed
@@ -44,7 +41,6 @@ entity jpa --class ~.domain.LineItem --sequenceName LINEITEM_SEQ
 field number --fieldName quantity --type java.lang.Integer --primitive
 field number --fieldName price --type java.lang.Double --primitive
 entity jpa --class ~.domain.Product --sequenceName PRODUCT_SEQ
-field other --fieldName id_ --type long 
 field string --fieldName name_
 field string --fieldName description
 
