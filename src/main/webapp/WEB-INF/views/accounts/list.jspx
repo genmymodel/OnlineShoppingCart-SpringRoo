@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_genmymodel_shoppingcart_domain_Account" items="${accounts}" z="KBxbs6RQPIwjRkf311nBc2cBFEk=">
+        <table:table data="${accounts}" id="l_com_genmymodel_shoppingcart_domain_Account" path="/accounts" z="7Q8n+txG08UOUPKMhpDezr1Dx0M=">
+            <table:column id="c_com_genmymodel_shoppingcart_domain_Account_id_" property="id_" z="pudmsqUaJyxVcLUGCAPLafqZm5g="/>
+            <table:column date="true" dateTimePattern="${account_billingaddress_date_format}" id="c_com_genmymodel_shoppingcart_domain_Account_billingAddress" property="billingAddress" z="/lnNlQMS4M+PBCGNNB7d1cNMO+k="/>
+            <table:column date="true" dateTimePattern="${account_open__date_format}" id="c_com_genmymodel_shoppingcart_domain_Account_open_" property="open_" z="B8918/C9M6maKUxvW39ZxHpCkdA="/>
+            <table:column id="c_com_genmymodel_shoppingcart_domain_Account_closed" property="closed" z="oqsV4Vdg6pCEM+vSd6n3mxKzYV0="/>
+            <table:column id="c_com_genmymodel_shoppingcart_domain_Account_isClosed" property="isClosed" z="1yCebx7WpKNTXS4n2r4uBUAQ0XU="/>
+            <table:column id="c_com_genmymodel_shoppingcart_domain_Account_customer" property="customer" z="J9tMLDPpvn86cuknGWRyx2nv8Mg="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_genmymodel_shoppingcart_domain_Order_" items="${order_s}" z="mB5ls4tM9xMxn71PadSwWOesbnY=">
+        <table:table data="${order_s}" id="l_com_genmymodel_shoppingcart_domain_Order_" path="/order_s" z="lhBISimRqI+onypWO4ooNXzCI7o=">
+            <table:column date="true" dateTimePattern="${order__number__date_format}" id="c_com_genmymodel_shoppingcart_domain_Order__number_" property="number_" z="PVIWP5WxeiFUiZwZ9ckvzLIVJLo="/>
+            <table:column date="true" dateTimePattern="${order__ordered_date_format}" id="c_com_genmymodel_shoppingcart_domain_Order__ordered" property="ordered" z="3X/lOBmbyVenWoU5K/CR9bymyhQ="/>
+            <table:column id="c_com_genmymodel_shoppingcart_domain_Order__shipped" property="shipped" z="rL4n82wpgvEJBubG5TR/BiPNNJI="/>
+            <table:column id="c_com_genmymodel_shoppingcart_domain_Order__shipTo" property="shipTo" z="z4XjAyU3h2RXhWhpPnRMMObpp0A="/>
+            <table:column id="c_com_genmymodel_shoppingcart_domain_Order__total" property="total" z="iviavUOCCjamij+JNelSVMzYv5A="/>
+            <table:column id="c_com_genmymodel_shoppingcart_domain_Order__status" property="status" z="VXoKFfX0dZuBXO+6nAFXW3v2j2k="/>
+        </table:table>
+    </page:list>
+</div>

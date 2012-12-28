@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_genmymodel_shoppingcart_domain_WebUser" object="${webuser}" path="/webusers" z="7n24dyu5jioxXhXKkgcIETI/vYI=">
+        <field:display field="login" id="s_com_genmymodel_shoppingcart_domain_WebUser_login" object="${webuser}" z="pzqpHoyAV6XunxGleM+6Xgm5Wvk="/>
+        <field:display field="password_" id="s_com_genmymodel_shoppingcart_domain_WebUser_password_" object="${webuser}" z="QLLXe2lzshrMncZz6JWGVbSCU58="/>
+        <field:display field="state_" id="s_com_genmymodel_shoppingcart_domain_WebUser_state_" object="${webuser}" z="ex8b5iCFKox7PqhYy64hCrzdNWI="/>
+        <field:display field="customer" id="s_com_genmymodel_shoppingcart_domain_WebUser_customer" object="${webuser}" z="1RbLioBp7ZOQevqkA19jb0/y0sc="/>
+        <field:display field="shoppincart" id="s_com_genmymodel_shoppingcart_domain_WebUser_shoppincart" object="${webuser}" z="WICdpBiR6jYQ+KdHlvn5+7C5wGM="/>
+    </page:show>
+</div>

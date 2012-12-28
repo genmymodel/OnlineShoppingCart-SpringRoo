@@ -1,0 +1,68 @@
+
+# Entities and attributes
+enum type --class ~.reference.UserState
+enum constant --name New_
+enum constant --name Active
+enum constant --name Banned
+enum type --class ~.reference.OrderStatus
+enum constant --name New_
+enum constant --name Old_
+enum constant --name Shipped
+enum constant --name Delivered
+enum constant --name Closed
+
+entity jpa --class ~.domain.Customer --sequenceName CUSTOMER_SEQ
+field other --fieldName id_ --type long 
+field string --fieldName address
+field string --fieldName phone
+field string --fieldName email
+entity jpa --class ~.domain.Payment --sequenceName PAYMENT_SEQ
+field other --fieldName id_ --type java.util.Date 
+field number --fieldName paidDate --type java.lang.Double --primitive
+field string --fieldName total
+field string --fieldName details
+entity jpa --class ~.domain.ShoppinCart --sequenceName SHOPPINCART_SEQ
+field other --fieldName creationDate --type java.util.Date 
+entity jpa --class ~.domain.Account --sequenceName ACCOUNT_SEQ
+field other --fieldName id_ --type long 
+field other --fieldName billingAddress --type java.util.Date 
+field other --fieldName open_ --type java.util.Date 
+field boolean --fieldName closed
+field string --fieldName isClosed
+entity jpa --class ~.domain.WebUser --sequenceName WEBUSER_SEQ
+field string --fieldName login
+field string --fieldName password_
+field enum --fieldName state_ --type ~.reference.UserState 
+entity jpa --class ~.domain.Order_ --sequenceName ORDER__SEQ
+field other --fieldName number_ --type java.util.Date 
+field other --fieldName ordered --type java.util.Date 
+field string --fieldName shipped
+field number --fieldName shipTo --type java.lang.Double --primitive
+field enum --fieldName total --type ~.reference.OrderStatus 
+field string --fieldName status
+entity jpa --class ~.domain.LineItem --sequenceName LINEITEM_SEQ
+field number --fieldName quantity --type java.lang.Integer --primitive
+field number --fieldName price --type java.lang.Double --primitive
+entity jpa --class ~.domain.Product --sequenceName PRODUCT_SEQ
+field other --fieldName id_ --type long 
+field string --fieldName name_
+field string --fieldName description
+
+
+# References (relations between entities)
+field reference --fieldName webuser --type WebUser --class  ~.domain.Customer --cardinality ONE_TO_ONE
+field reference --fieldName acc --type Account --class  ~.domain.Customer --cardinality ONE_TO_ONE
+field reference --fieldName account --type Account --class  ~.domain.Payment --cardinality MANY_TO_ONE
+field reference --fieldName webuser --type WebUser --class  ~.domain.ShoppinCart --cardinality ONE_TO_ONE
+field set --fieldName item --type LineItem --class  ~.domain.ShoppinCart --cardinality ONE_TO_MANY
+field reference --fieldName customer --type Customer --class  ~.domain.Account --cardinality ONE_TO_ONE
+field set --fieldName order_ --type Order_ --class  ~.domain.Account --cardinality ONE_TO_MANY
+field set --fieldName payment --type Payment --class  ~.domain.Account --cardinality ONE_TO_MANY
+field reference --fieldName customer --type Customer --class  ~.domain.WebUser --cardinality ONE_TO_ONE
+field reference --fieldName shoppincart --type ShoppinCart --class  ~.domain.WebUser --cardinality ONE_TO_ONE
+field reference --fieldName account --type Account --class  ~.domain.Order_ --cardinality MANY_TO_ONE
+field reference --fieldName sc --type ShoppinCart --class  ~.domain.LineItem --cardinality MANY_TO_ONE
+field reference --fieldName product --type Product --class  ~.domain.LineItem --cardinality ONE_TO_ONE
+field reference --fieldName item --type LineItem --class  ~.domain.Product --cardinality ONE_TO_ONE
+
+

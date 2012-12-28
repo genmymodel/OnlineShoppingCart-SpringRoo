@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_genmymodel_shoppingcart_domain_ShoppinCart" modelAttribute="shoppinCart" path="/shoppincarts" render="${empty dependencies}" z="VValvaOb3iNC7n9kHwkpCLW9q4I=">
+        <field:datetime dateTimePattern="${shoppinCart_creationdate_date_format}" field="creationDate" id="c_com_genmymodel_shoppingcart_domain_ShoppinCart_creationDate" z="Q4Cdcfae923Ydnx5SoDVy+ht/BQ="/>
+        <field:select field="webuser" id="c_com_genmymodel_shoppingcart_domain_ShoppinCart_webuser" itemValue="id" items="${webusers}" path="/webusers" z="0laORJJP1fdHnbsMijjAy2xanqM="/>
+        <field:simple field="item" id="c_com_genmymodel_shoppingcart_domain_ShoppinCart_item" messageCode="entity_reference_not_managed" messageCodeAttribute="Line Item" z="kKi/Q53HMIZJk7vadzv6SRECCDI="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_genmymodel_shoppingcart_domain_ShoppinCart" render="${not empty dependencies}" z="kc95UrOQQerRRuwbw2xB5P2cp2M="/>
+</div>

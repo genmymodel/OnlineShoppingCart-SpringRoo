@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_genmymodel_shoppingcart_domain_Account" modelAttribute="account" path="/accounts" render="${empty dependencies}" z="f84tSJ0dk/SAncrK4kWYxP01qhY=">
+        <field:input field="id_" id="c_com_genmymodel_shoppingcart_domain_Account_id_" z="e4Dmhd4yWDCFWzvkBfNECHAnjHU="/>
+        <field:datetime dateTimePattern="${account_billingaddress_date_format}" field="billingAddress" id="c_com_genmymodel_shoppingcart_domain_Account_billingAddress" z="BOIVnDpOlh21ffublYdcnbzQOAc="/>
+        <field:datetime dateTimePattern="${account_open__date_format}" field="open_" id="c_com_genmymodel_shoppingcart_domain_Account_open_" z="Wbdn/d271EnIGotSwcEku4YboqA="/>
+        <field:checkbox field="closed" id="c_com_genmymodel_shoppingcart_domain_Account_closed" z="yRSJfjVEEJjWmprkl8ZeCtZuh/4="/>
+        <field:input field="isClosed" id="c_com_genmymodel_shoppingcart_domain_Account_isClosed" z="lji72N+3+x9Q5u2NPGbhUR0EdtI="/>
+        <field:select field="customer" id="c_com_genmymodel_shoppingcart_domain_Account_customer" itemValue="id" items="${customers}" path="/customers" z="k4WWpv2onUOjlwPZ2fe0hgJFZbA="/>
+        <field:simple field="order_" id="c_com_genmymodel_shoppingcart_domain_Account_order_" messageCode="entity_reference_not_managed" messageCodeAttribute="Order_" z="BfE0fqRzdhumTIqn7HaduGABMUM="/>
+        <field:simple field="payment" id="c_com_genmymodel_shoppingcart_domain_Account_payment" messageCode="entity_reference_not_managed" messageCodeAttribute="Payment" z="409+SfO8RndhISFrhy1Z0xlc5pQ="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_genmymodel_shoppingcart_domain_Account" render="${not empty dependencies}" z="rYuog6JaGWoAQge22Py3uthLnhs="/>
+</div>

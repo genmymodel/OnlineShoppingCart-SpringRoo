@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_genmymodel_shoppingcart_domain_Account" object="${account}" path="/accounts" z="kfbCfb8IgXTHhgLs1R832q1hL/k=">
+        <field:display field="id_" id="s_com_genmymodel_shoppingcart_domain_Account_id_" object="${account}" z="cCVD754c3t1/esnQNZNUA6PSgCk="/>
+        <field:display date="true" dateTimePattern="${account_billingaddress_date_format}" field="billingAddress" id="s_com_genmymodel_shoppingcart_domain_Account_billingAddress" object="${account}" z="6/OePoGeBrRtm85xfcPV+qv3+bc="/>
+        <field:display date="true" dateTimePattern="${account_open__date_format}" field="open_" id="s_com_genmymodel_shoppingcart_domain_Account_open_" object="${account}" z="j7LdxEV1GfXrDd/BGBlKvg5BIoI="/>
+        <field:display field="closed" id="s_com_genmymodel_shoppingcart_domain_Account_closed" object="${account}" z="ho4mHXEP7lPHz03KvA9dLjaoSb4="/>
+        <field:display field="isClosed" id="s_com_genmymodel_shoppingcart_domain_Account_isClosed" object="${account}" z="2zoZxyv1Xyq+GPSAAlJM3tcsRsQ="/>
+        <field:display field="customer" id="s_com_genmymodel_shoppingcart_domain_Account_customer" object="${account}" z="MoJS+6RnAFN37X45ZZHI36iPSak="/>
+    </page:show>
+</div>

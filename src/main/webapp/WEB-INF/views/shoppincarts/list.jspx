@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_genmymodel_shoppingcart_domain_ShoppinCart" items="${shoppincarts}" z="V6YTnfATuKx8njX4cJFzubYjHCw=">
+        <table:table data="${shoppincarts}" id="l_com_genmymodel_shoppingcart_domain_ShoppinCart" path="/shoppincarts" z="l7d53xKIC7N4bmXcGtf+ExO27YU=">
+            <table:column date="true" dateTimePattern="${shoppinCart_creationdate_date_format}" id="c_com_genmymodel_shoppingcart_domain_ShoppinCart_creationDate" property="creationDate" z="bGsNjHoPzeH+q8WVKgpSlwsxGDM="/>
+            <table:column id="c_com_genmymodel_shoppingcart_domain_ShoppinCart_webuser" property="webuser" z="UIikZGzXy/AtlOzWDx8XpNQCSac="/>
+        </table:table>
+    </page:list>
+</div>
