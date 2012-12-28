@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
-    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
-    <jsp:output omit-xml-declaration="yes"/>
-    <page:show id="ps_com_genmymodel_domain_ShoppinCart" object="${shoppincart}" path="/shoppincarts" z="NDQJatuY9ittaofMhVp5BQS/VCI=">
-        <field:display date="true" dateTimePattern="${shoppinCart_creationdate_date_format}" field="creationDate" id="s_com_genmymodel_domain_ShoppinCart_creationDate" object="${shoppincart}" z="kbeytLmdeI3X831QIZO/BlA5TOM="/>
-        <field:display field="webuser" id="s_com_genmymodel_domain_ShoppinCart_webuser" object="${shoppincart}" z="0iMwzutMS/m4GsOVqwqZSy3906k="/>
-    </page:show>
-</div>
