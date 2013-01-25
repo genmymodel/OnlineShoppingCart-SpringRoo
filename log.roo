@@ -1,5 +1,11 @@
-
-# Entities and attributes
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 18:54:51
+project --topLevelPackage com.genmymodel.shoppingcart --projectName com.genmymodel.shoppingcart
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+logging setup --level INFO
+// script --file setup.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 18:54:53
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 18:54:56
 enum type --class ~.reference.UserState
 enum constant --name MyNew
 enum constant --name Active
@@ -10,7 +16,6 @@ enum constant --name MyOld
 enum constant --name Shipped
 enum constant --name Delivered
 enum constant --name Closed
-
 entity jpa --class ~.domain.Customer --sequenceName CUSTOMER_SEQ
 field string --fieldName address --notNull
 field string --fieldName email --notNull
@@ -36,15 +41,14 @@ field date --fieldName ordered --type java.util.Date --notNull
 field number --fieldName total --type java.lang.Double --primitive --notNull
 field boolean --fieldName shipped --notNull
 field string --fieldName status --notNull
-field int --fieldName Mynumber --type Integer  --notNull
-entity jpa --class ~.domain.LineItem --sequenceName LINEITEM_SEQ
-field int --fieldName quantity --type Integer  --notNull
-field number --fieldName price --type java.lang.Double --primitive --notNull
-entity jpa --class ~.domain.Product --sequenceName PRODUCT_SEQ
-field string --fieldName Myname --notNull
-field string --fieldName description --notNull
-
-
-# References (relations between entities)
-
-
+// [failed] script --file entities.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 18:55:00
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 18:55:03
+web mvc setup
+web mvc all --package ~.web
+web mvc finder all
+web mvc language --code en
+// script --file webmvc.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 18:55:09

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_myorder" z="W8+AQ5QSHbD32DW4QWjogLjGA0I=">
+            <menu:item id="i_myorder_new" messageCode="global_menu_new" url="/myorders?form" z="fqXtRnWcKxcI3V5M+xCjpOpm0KQ="/>
+            <menu:item id="i_myorder_list" messageCode="global_menu_list" url="/myorders?page=1&amp;size=${empty param.size ? 10 : param.size}" z="befNGrDExKPi8Pzx0WgXz/Wsy+U="/>
+        </menu:category>
+        <menu:category id="c_customer" z="Wa+bVSiDyYo/wX1nGU1B/z+OKhE=">
+            <menu:item id="i_customer_new" messageCode="global_menu_new" url="/customers?form" z="d9+YIotZHp6KZLGKwwnMVzPvh8k="/>
+            <menu:item id="i_customer_list" messageCode="global_menu_list" url="/customers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Yo9cUtyc7EUvbxwQ7EoeqXWaVJM="/>
+        </menu:category>
+        <menu:category id="c_shoppincart" z="sNFBsq3vIt2pbU+poT9I5FgBOBs=">
+            <menu:item id="i_shoppincart_new" messageCode="global_menu_new" url="/shoppincarts?form" z="wS9QEPE17KRT4/VnFtv/ObteYHQ="/>
+            <menu:item id="i_shoppincart_list" messageCode="global_menu_list" url="/shoppincarts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ezz83JobH9GkfO1lsmsWaclGgtM="/>
+        </menu:category>
+        <menu:category id="c_account" z="/ObionklNVMvfxU5oSj2hEUJNu0=">
+            <menu:item id="i_account_new" messageCode="global_menu_new" url="/accounts?form" z="7ISq6pJsfrDJexgk1yAmzNiIcp8="/>
+            <menu:item id="i_account_list" messageCode="global_menu_list" url="/accounts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="VeXZsM9n5bR9ZvhjdYhrVsG24uw="/>
+        </menu:category>
+        <menu:category id="c_webuser" z="Nv87PWjcP8+1HDh6HsM2Jhikp94=">
+            <menu:item id="i_webuser_new" messageCode="global_menu_new" url="/webusers?form" z="V9x3UzHGx672bdn3W4TNNEx2I3U="/>
+            <menu:item id="i_webuser_list" messageCode="global_menu_list" url="/webusers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="9lFbAH506wt8sU2MWYnJ+DW9iO8="/>
+        </menu:category>
+        <menu:category id="c_payment" z="KXvP3nk7swdtwqF1yirxi8G+72w=">
+            <menu:item id="i_payment_new" messageCode="global_menu_new" url="/payments?form" z="MsWgEk8mPOMZsZrpSmZ4EEiRzKQ="/>
+            <menu:item id="i_payment_list" messageCode="global_menu_list" url="/payments?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Z3RAJMV3OotiyNAbiUB5cNixuyY="/>
+        </menu:category>
+    </menu:menu>
+</div>

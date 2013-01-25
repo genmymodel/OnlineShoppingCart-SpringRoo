@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_genmymodel_shoppingcart_domain_Account" object="${account}" path="/accounts" z="kfbCfb8IgXTHhgLs1R832q1hL/k=">
+        <field:display date="true" dateTimePattern="${account_closed_date_format}" field="closed" id="s_com_genmymodel_shoppingcart_domain_Account_closed" object="${account}" z="JIQ2eFAS0bXfKm1S2pqxEWhTWJ8="/>
+        <field:display field="billingAddress" id="s_com_genmymodel_shoppingcart_domain_Account_billingAddress" object="${account}" z="4gq0EnNO8c68sWkXjEY+A92Vp7A="/>
+        <field:display date="true" dateTimePattern="${account_myopen_date_format}" field="myopen" id="s_com_genmymodel_shoppingcart_domain_Account_Myopen" object="${account}" z="6oZmuXIDcI8MQIEMsOfBSpYqm4Q="/>
+        <field:display field="isClosed" id="s_com_genmymodel_shoppingcart_domain_Account_isClosed" object="${account}" z="2zoZxyv1Xyq+GPSAAlJM3tcsRsQ="/>
+    </page:show>
+</div>

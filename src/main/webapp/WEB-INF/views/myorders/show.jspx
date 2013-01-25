@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_genmymodel_shoppingcart_domain_MyOrder" object="${myorder}" path="/myorders" z="eiwLoyGoBRDhuq/dckuq2r2EW5M=">
+        <field:display field="shipTo" id="s_com_genmymodel_shoppingcart_domain_MyOrder_shipTo" object="${myorder}" z="la3IiP2mH4Rz0gUQUobZEwBpR6I="/>
+        <field:display date="true" dateTimePattern="${myOrder_ordered_date_format}" field="ordered" id="s_com_genmymodel_shoppingcart_domain_MyOrder_ordered" object="${myorder}" z="JVlmwhuB66H4bI8w9kARA4OjyTQ="/>
+        <field:display field="total" id="s_com_genmymodel_shoppingcart_domain_MyOrder_total" object="${myorder}" z="unpaSLRalFsNEw+ar4015Av3QnI="/>
+        <field:display field="shipped" id="s_com_genmymodel_shoppingcart_domain_MyOrder_shipped" object="${myorder}" z="n3tXNpQiu15I6UiC40P55tnK7nI="/>
+        <field:display field="status" id="s_com_genmymodel_shoppingcart_domain_MyOrder_status" object="${myorder}" z="jy5mzerFcHTDYfGQAXCFs9WZ3B0="/>
+    </page:show>
+</div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_genmymodel_shoppingcart_domain_MyOrder" modelAttribute="myOrder" path="/myorders" versionField="Version" z="8jx7C/oLwG4CUS5knMNF7ZrEtl8=">
+        <field:input field="shipTo" id="c_com_genmymodel_shoppingcart_domain_MyOrder_shipTo" required="true" z="10D3sn3gK14yjO1XHUmB34fjibo="/>
+        <field:datetime dateTimePattern="${myOrder_ordered_date_format}" field="ordered" id="c_com_genmymodel_shoppingcart_domain_MyOrder_ordered" required="true" z="hEz/smwN8/PJ6uaWZJPEPg/t4ng="/>
+        <field:input field="total" id="c_com_genmymodel_shoppingcart_domain_MyOrder_total" required="true" z="CTBweEtUHRziT0Eh9Owl6lunpbE="/>
+        <field:checkbox field="shipped" id="c_com_genmymodel_shoppingcart_domain_MyOrder_shipped" z="a/MY0QbdWEDvHOruV/t+mQyWPPw="/>
+        <field:input field="status" id="c_com_genmymodel_shoppingcart_domain_MyOrder_status" required="true" z="kKyQ14/qDK9JvThnpevJpPFP8VA="/>
+    </form:update>
+</div>
