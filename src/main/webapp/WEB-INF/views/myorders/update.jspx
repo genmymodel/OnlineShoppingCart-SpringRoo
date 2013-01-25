@@ -8,5 +8,6 @@
         <field:input field="total" id="c_com_genmymodel_shoppingcart_domain_MyOrder_total" required="true" z="CTBweEtUHRziT0Eh9Owl6lunpbE="/>
         <field:checkbox field="shipped" id="c_com_genmymodel_shoppingcart_domain_MyOrder_shipped" z="a/MY0QbdWEDvHOruV/t+mQyWPPw="/>
         <field:input field="status" id="c_com_genmymodel_shoppingcart_domain_MyOrder_status" required="true" z="kKyQ14/qDK9JvThnpevJpPFP8VA="/>
+        <field:input field="Mynumber" id="c_com_genmymodel_shoppingcart_domain_MyOrder_Mynumber" required="true" z="x54g8OtNkkPe6/LkN/jaFhDOyIQ="/>
     </form:update>
 </div>

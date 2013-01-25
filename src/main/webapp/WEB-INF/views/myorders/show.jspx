@@ -8,5 +8,6 @@
         <field:display field="total" id="s_com_genmymodel_shoppingcart_domain_MyOrder_total" object="${myorder}" z="unpaSLRalFsNEw+ar4015Av3QnI="/>
         <field:display field="shipped" id="s_com_genmymodel_shoppingcart_domain_MyOrder_shipped" object="${myorder}" z="n3tXNpQiu15I6UiC40P55tnK7nI="/>
         <field:display field="status" id="s_com_genmymodel_shoppingcart_domain_MyOrder_status" object="${myorder}" z="jy5mzerFcHTDYfGQAXCFs9WZ3B0="/>
+        <field:display field="mynumber" id="s_com_genmymodel_shoppingcart_domain_MyOrder_Mynumber" object="${myorder}" z="4ErVhQdYKdCTLRJX8uRidArkDgk="/>
     </page:show>
 </div>

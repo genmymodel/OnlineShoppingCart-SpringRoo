@@ -12,8 +12,8 @@ enum constant --name Delivered
 enum constant --name Closed
 
 entity jpa --class ~.domain.Customer --sequenceName CUSTOMER_SEQ
-field string --fieldName address --notNull
 field string --fieldName email --notNull
+field string --fieldName address --notNull
 field string --fieldName phone --notNull
 entity jpa --class ~.domain.Payment --sequenceName PAYMENT_SEQ
 field number --fieldName total --type java.lang.Double --primitive --notNull
@@ -36,9 +36,9 @@ field date --fieldName ordered --type java.util.Date --notNull
 field number --fieldName total --type java.lang.Double --primitive --notNull
 field boolean --fieldName shipped --notNull
 field string --fieldName status --notNull
-field int --fieldName Mynumber --type Integer  --notNull
+field number --fieldName Mynumber --type Integer  --notNull
 entity jpa --class ~.domain.LineItem --sequenceName LINEITEM_SEQ
-field int --fieldName quantity --type Integer  --notNull
+field number --fieldName quantity --type Integer  --notNull
 field number --fieldName price --type java.lang.Double --primitive --notNull
 entity jpa --class ~.domain.Product --sequenceName PRODUCT_SEQ
 field string --fieldName Myname --notNull

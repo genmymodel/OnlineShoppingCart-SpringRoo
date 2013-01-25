@@ -9,6 +9,7 @@
             <table:column id="c_com_genmymodel_shoppingcart_domain_MyOrder_total" property="total" z="O14BoFnvBRIQBr1++r6YyJgf7Ic="/>
             <table:column id="c_com_genmymodel_shoppingcart_domain_MyOrder_shipped" property="shipped" z="RH7rXtxbtfUlE3YJ8SqbIHRudT0="/>
             <table:column id="c_com_genmymodel_shoppingcart_domain_MyOrder_status" property="status" z="91DoHpzqOvp/QOIL3DPAN94NagY="/>
+            <table:column id="c_com_genmymodel_shoppingcart_domain_MyOrder_Mynumber" property="mynumber" z="0x9IEKvicBJQPrFh2F2drOVOCnA="/>
         </table:table>
     </page:list>
 </div>

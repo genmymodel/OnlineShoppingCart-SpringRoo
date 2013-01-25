@@ -30,4 +30,7 @@ public class MyOrder {
 
     @NotNull
     private String status;
+
+    @NotNull
+    private com.genmymodel.shoppingcart.domain.Integer Mynumber;
 }

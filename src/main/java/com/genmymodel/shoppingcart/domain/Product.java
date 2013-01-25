@@ -7,15 +7,12 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 @RooJavaBean
 @RooToString
-@RooJpaActiveRecord(sequenceName = "CUSTOMER_SEQ")
-public class Customer {
+@RooJpaActiveRecord(sequenceName = "PRODUCT_SEQ")
+public class Product {
 
     @NotNull
-    private String email;
+    private String Myname;
 
     @NotNull
-    private String address;
-
-    @NotNull
-    private String phone;
+    private String description;
 }

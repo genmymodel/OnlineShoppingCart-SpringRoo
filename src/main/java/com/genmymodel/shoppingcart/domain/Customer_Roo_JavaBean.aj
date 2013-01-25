@@ -7,20 +7,20 @@ import com.genmymodel.shoppingcart.domain.Customer;
 
 privileged aspect Customer_Roo_JavaBean {
     
-    public String Customer.getAddress() {
-        return this.address;
-    }
-    
-    public void Customer.setAddress(String address) {
-        this.address = address;
-    }
-    
     public String Customer.getEmail() {
         return this.email;
     }
     
     public void Customer.setEmail(String email) {
         this.email = email;
+    }
+    
+    public String Customer.getAddress() {
+        return this.address;
+    }
+    
+    public void Customer.setAddress(String address) {
+        this.address = address;
     }
     
     public String Customer.getPhone() {

@@ -3,6 +3,7 @@
 
 package com.genmymodel.shoppingcart.domain;
 
+import com.genmymodel.shoppingcart.domain.Integer;
 import com.genmymodel.shoppingcart.domain.MyOrder;
 import java.util.Date;
 
@@ -46,6 +47,14 @@ privileged aspect MyOrder_Roo_JavaBean {
     
     public void MyOrder.setStatus(String status) {
         this.status = status;
+    }
+    
+    public Integer MyOrder.getMynumber() {
+        return this.Mynumber;
+    }
+    
+    public void MyOrder.setMynumber(Integer Mynumber) {
+        this.Mynumber = Mynumber;
     }
     
 }
