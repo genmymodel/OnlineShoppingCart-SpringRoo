@@ -1,0 +1,9 @@
+
+web mvc setup
+web mvc all --package ~.web
+web mvc finder all
+
+web mvc language --code en
+
+#perform tests
+#perform eclipse
