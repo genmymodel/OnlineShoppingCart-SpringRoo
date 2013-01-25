@@ -12,13 +12,13 @@ enum constant --name Delivered
 enum constant --name Closed
 
 entity jpa --class ~.domain.Customer --sequenceName CUSTOMER_SEQ
-field string --fieldName address --notNull
 field string --fieldName email --notNull
+field string --fieldName address --notNull
 field string --fieldName phone --notNull
 entity jpa --class ~.domain.Payment --sequenceName PAYMENT_SEQ
-field other --fieldName total --type Real  --notNull
 field string --fieldName details --notNull
 field date --fieldName paidDate --type java.util.Date --notNull
+field double --fieldName total --type java.lang.Double --primitive --notNull
 entity jpa --class ~.domain.ShoppinCart --sequenceName SHOPPINCART_SEQ
 field date --fieldName creationDate --type java.util.Date --notNull
 entity jpa --class ~.domain.Account --sequenceName ACCOUNT_SEQ
@@ -31,14 +31,14 @@ field string --fieldName Mystate --notNull
 field string --fieldName login --notNull
 field string --fieldName Mypassword --notNull
 entity jpa --class ~.domain.MyOrder --sequenceName MYORDER_SEQ
-field other --fieldName total --type Real  --notNull
 field string --fieldName shipTo --notNull
 field date --fieldName ordered --type java.util.Date --notNull
 field boolean --fieldName shipped --notNull
 field string --fieldName status --notNull
 field int --fieldName Mynumber --type Integer  --notNull
+field double --fieldName total --type java.lang.Double --primitive --notNull
 entity jpa --class ~.domain.LineItem --sequenceName LINEITEM_SEQ
-field other --fieldName price --type Real  --notNull
+field double --fieldName price --type java.lang.Double --primitive --notNull
 field int --fieldName quantity --type Integer  --notNull
 entity jpa --class ~.domain.Product --sequenceName PRODUCT_SEQ
 field string --fieldName Myname --notNull

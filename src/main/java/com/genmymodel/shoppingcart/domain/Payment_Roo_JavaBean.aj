@@ -4,18 +4,9 @@
 package com.genmymodel.shoppingcart.domain;
 
 import com.genmymodel.shoppingcart.domain.Payment;
-import com.genmymodel.shoppingcart.domain.Real;
 import java.util.Date;
 
 privileged aspect Payment_Roo_JavaBean {
-    
-    public Real Payment.getTotal() {
-        return this.total;
-    }
-    
-    public void Payment.setTotal(Real total) {
-        this.total = total;
-    }
     
     public String Payment.getDetails() {
         return this.details;

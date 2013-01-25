@@ -15,9 +15,6 @@ import org.springframework.roo.addon.tostring.RooToString;
 public class Payment {
 
     @NotNull
-    private Real total;
-
-    @NotNull
     private String details;
 
     @NotNull

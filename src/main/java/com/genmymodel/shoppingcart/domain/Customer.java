@@ -11,10 +11,10 @@ import org.springframework.roo.addon.tostring.RooToString;
 public class Customer {
 
     @NotNull
-    private String address;
+    private String email;
 
     @NotNull
-    private String email;
+    private String address;
 
     @NotNull
     private String phone;
