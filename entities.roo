@@ -24,8 +24,8 @@ field Date --fieldName creationDate --type Date  --notNull
 entity jpa --class ~.domain.Account --sequenceName ACCOUNT_SEQ
 field Date --fieldName closed --type Date  --notNull
 field other --fieldName billingAddress --notNull
-field boolean --fieldName isClosed --notNull
 field Date --fieldName Myopen --type Date  --notNull
+field boolean --fieldName isClosed --notNull
 entity jpa --class ~.domain.WebUser --sequenceName WEBUSER_SEQ
 field other --fieldName login --notNull
 field other --fieldName Mypassword --notNull

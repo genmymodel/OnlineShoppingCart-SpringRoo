@@ -28,3 +28,26 @@ web mvc language --code en
 // script --file webmvc.roo
 quit
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 17:57:34
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 18:02:53
+// [failed] script --file setup.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 18:02:56
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 18:02:58
+enum type --class ~.reference.UserState
+enum constant --name MyNew
+enum constant --name Active
+enum constant --name Banned
+enum type --class ~.reference.OrderStatus
+enum constant --name MyNew
+enum constant --name MyOld
+enum constant --name Shipped
+enum constant --name Delivered
+enum constant --name Closed
+entity jpa --class ~.domain.Customer --sequenceName CUSTOMER_SEQ
+// [failed] script --file entities.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 18:03:01
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 18:03:03
+// [failed] script --file webmvc.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 18:03:06
