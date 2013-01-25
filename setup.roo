@@ -1,6 +1,0 @@
-project --topLevelPackage com.genmymodel.shoppingcart --projectName com.genmymodel.shoppingcart
-
-jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
-
-logging setup --level INFO
-
