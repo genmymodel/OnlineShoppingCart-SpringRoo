@@ -12,37 +12,37 @@ enum constant --name Delivered
 enum constant --name Closed
 
 entity jpa --class ~.domain.Customer --sequenceName CUSTOMER_SEQ
-field other --fieldName address --notNull
-field other --fieldName email --notNull
-field other --fieldName phone --notNull
+field string --fieldName address --notNull
+field string --fieldName email --notNull
+field string --fieldName phone --notNull
 entity jpa --class ~.domain.Payment --sequenceName PAYMENT_SEQ
 field other --fieldName total --type Real  --notNull
-field Date --fieldName paidDate --type Date  --notNull
-field other --fieldName details --notNull
+field string --fieldName details --notNull
+field date --fieldName paidDate --type java.util.Date --notNull
 entity jpa --class ~.domain.ShoppinCart --sequenceName SHOPPINCART_SEQ
-field Date --fieldName creationDate --type Date  --notNull
+field date --fieldName creationDate --type java.util.Date --notNull
 entity jpa --class ~.domain.Account --sequenceName ACCOUNT_SEQ
-field Date --fieldName closed --type Date  --notNull
-field other --fieldName billingAddress --notNull
-field Date --fieldName Myopen --type Date  --notNull
+field date --fieldName closed --type java.util.Date --notNull
+field string --fieldName billingAddress --notNull
+field date --fieldName Myopen --type java.util.Date --notNull
 field boolean --fieldName isClosed --notNull
 entity jpa --class ~.domain.WebUser --sequenceName WEBUSER_SEQ
-field other --fieldName login --notNull
-field other --fieldName Mypassword --notNull
-field other --fieldName Mystate --notNull
+field string --fieldName Mystate --notNull
+field string --fieldName login --notNull
+field string --fieldName Mypassword --notNull
 entity jpa --class ~.domain.MyOrder --sequenceName MYORDER_SEQ
 field other --fieldName total --type Real  --notNull
-field other --fieldName status --notNull
+field string --fieldName shipTo --notNull
+field date --fieldName ordered --type java.util.Date --notNull
 field boolean --fieldName shipped --notNull
+field string --fieldName status --notNull
 field int --fieldName Mynumber --type Integer  --notNull
-field other --fieldName shipTo --notNull
-field Date --fieldName ordered --type Date  --notNull
 entity jpa --class ~.domain.LineItem --sequenceName LINEITEM_SEQ
 field other --fieldName price --type Real  --notNull
 field int --fieldName quantity --type Integer  --notNull
 entity jpa --class ~.domain.Product --sequenceName PRODUCT_SEQ
-field other --fieldName description --notNull
-field other --fieldName Myname --notNull
+field string --fieldName Myname --notNull
+field string --fieldName description --notNull
 
 
 # References (relations between entities)

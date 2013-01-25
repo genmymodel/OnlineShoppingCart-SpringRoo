@@ -51,3 +51,50 @@ quit
 // [failed] script --file webmvc.roo
 quit
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 18:03:06
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 18:06:46
+// [failed] script --file setup.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 18:06:49
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 18:06:51
+enum type --class ~.reference.UserState
+enum constant --name MyNew
+enum constant --name Active
+enum constant --name Banned
+enum type --class ~.reference.OrderStatus
+enum constant --name MyNew
+enum constant --name MyOld
+enum constant --name Shipped
+enum constant --name Delivered
+enum constant --name Closed
+entity jpa --class ~.domain.Customer --sequenceName CUSTOMER_SEQ
+field string --fieldName address --notNull
+field string --fieldName email --notNull
+field string --fieldName phone --notNull
+entity jpa --class ~.domain.Payment --sequenceName PAYMENT_SEQ
+field other --fieldName total --type Real  --notNull
+field string --fieldName details --notNull
+field date --fieldName paidDate --type java.util.Date --notNull
+entity jpa --class ~.domain.ShoppinCart --sequenceName SHOPPINCART_SEQ
+field date --fieldName creationDate --type java.util.Date --notNull
+entity jpa --class ~.domain.Account --sequenceName ACCOUNT_SEQ
+field date --fieldName closed --type java.util.Date --notNull
+field string --fieldName billingAddress --notNull
+field date --fieldName Myopen --type java.util.Date --notNull
+field boolean --fieldName isClosed --notNull
+entity jpa --class ~.domain.WebUser --sequenceName WEBUSER_SEQ
+field string --fieldName Mystate --notNull
+field string --fieldName login --notNull
+field string --fieldName Mypassword --notNull
+entity jpa --class ~.domain.MyOrder --sequenceName MYORDER_SEQ
+field other --fieldName total --type Real  --notNull
+field string --fieldName shipTo --notNull
+field date --fieldName ordered --type java.util.Date --notNull
+field boolean --fieldName shipped --notNull
+field string --fieldName status --notNull
+// [failed] script --file entities.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 18:06:56
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 18:06:59
+// [failed] script --file webmvc.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 18:07:02

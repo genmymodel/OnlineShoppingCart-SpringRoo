@@ -16,7 +16,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Customer, String> ApplicationConversionServiceFactoryBean.getCustomerToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.genmymodel.shoppingcart.domain.Customer, java.lang.String>() {
             public String convert(Customer customer) {
-                return "(no displayable fields)";
+                return new StringBuilder().append(customer.getAddress()).append(' ').append(customer.getEmail()).append(' ').append(customer.getPhone()).toString();
             }
         };
     }
