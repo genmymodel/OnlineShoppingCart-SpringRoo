@@ -1,64 +1,50 @@
 
 # Entities and attributes
 enum type --class ~.reference.UserState
-enum constant --name New_
+enum constant --name MyNew
 enum constant --name Active
 enum constant --name Banned
 enum type --class ~.reference.OrderStatus
-enum constant --name New_
-enum constant --name Old_
+enum constant --name MyNew
+enum constant --name MyOld
 enum constant --name Shipped
 enum constant --name Delivered
 enum constant --name Closed
 
 entity jpa --class ~.domain.Customer --sequenceName CUSTOMER_SEQ
-field string --fieldName address
-field string --fieldName phone
-field string --fieldName email
+field other --fieldName address --notNull
+field other --fieldName email --notNull
+field other --fieldName phone --notNull
 entity jpa --class ~.domain.Payment --sequenceName PAYMENT_SEQ
-field number --fieldName paidDate --type java.lang.Double --primitive
-field string --fieldName total
-field string --fieldName details
+field other --fieldName total --type Real  --notNull
+field Date --fieldName paidDate --type Date  --notNull
+field other --fieldName details --notNull
 entity jpa --class ~.domain.ShoppinCart --sequenceName SHOPPINCART_SEQ
-field other --fieldName creationDate --type java.util.Date 
+field Date --fieldName creationDate --type Date  --notNull
 entity jpa --class ~.domain.Account --sequenceName ACCOUNT_SEQ
-field other --fieldName billingAddress --type java.util.Date 
-field other --fieldName open_ --type java.util.Date 
-field boolean --fieldName closed
-field string --fieldName isClosed
+field Date --fieldName closed --type Date  --notNull
+field other --fieldName billingAddress --notNull
+field Date --fieldName Myopen --type Date  --notNull
+field boolean --fieldName isClosed --notNull
 entity jpa --class ~.domain.WebUser --sequenceName WEBUSER_SEQ
-field string --fieldName login
-field string --fieldName password_
-field enum --fieldName state_ --type ~.reference.UserState 
-entity jpa --class ~.domain.Order_ --sequenceName ORDER__SEQ
-field other --fieldName number_ --type java.util.Date 
-field other --fieldName ordered --type java.util.Date 
-field string --fieldName shipped
-field number --fieldName shipTo --type java.lang.Double --primitive
-field enum --fieldName total --type ~.reference.OrderStatus 
-field string --fieldName status
+field other --fieldName login --notNull
+field other --fieldName Mypassword --notNull
+field other --fieldName Mystate --notNull
+entity jpa --class ~.domain.MyOrder --sequenceName MYORDER_SEQ
+field other --fieldName total --type Real  --notNull
+field other --fieldName status --notNull
+field boolean --fieldName shipped --notNull
+field int --fieldName Mynumber --type Integer  --notNull
+field other --fieldName shipTo --notNull
+field Date --fieldName ordered --type Date  --notNull
 entity jpa --class ~.domain.LineItem --sequenceName LINEITEM_SEQ
-field number --fieldName quantity --type java.lang.Integer --primitive
-field number --fieldName price --type java.lang.Double --primitive
+field other --fieldName price --type Real  --notNull
+field int --fieldName quantity --type Integer  --notNull
 entity jpa --class ~.domain.Product --sequenceName PRODUCT_SEQ
-field string --fieldName name_
-field string --fieldName description
+field other --fieldName description --notNull
+field other --fieldName Myname --notNull
 
 
 # References (relations between entities)
-field reference --fieldName webuser --type WebUser --class  ~.domain.Customer --cardinality ONE_TO_ONE
-field reference --fieldName acc --type Account --class  ~.domain.Customer --cardinality ONE_TO_ONE
-field reference --fieldName account --type Account --class  ~.domain.Payment --cardinality MANY_TO_ONE
-field reference --fieldName webuser --type WebUser --class  ~.domain.ShoppinCart --cardinality ONE_TO_ONE
-field set --fieldName item --type LineItem --class  ~.domain.ShoppinCart --cardinality ONE_TO_MANY
-field reference --fieldName customer --type Customer --class  ~.domain.Account --cardinality ONE_TO_ONE
-field set --fieldName order_ --type Order_ --class  ~.domain.Account --cardinality ONE_TO_MANY
-field set --fieldName payment --type Payment --class  ~.domain.Account --cardinality ONE_TO_MANY
-field reference --fieldName customer --type Customer --class  ~.domain.WebUser --cardinality ONE_TO_ONE
-field reference --fieldName shoppincart --type ShoppinCart --class  ~.domain.WebUser --cardinality ONE_TO_ONE
-field reference --fieldName account --type Account --class  ~.domain.Order_ --cardinality MANY_TO_ONE
-field reference --fieldName sc --type ShoppinCart --class  ~.domain.LineItem --cardinality MANY_TO_ONE
-field reference --fieldName product --type Product --class  ~.domain.LineItem --cardinality ONE_TO_ONE
-field reference --fieldName item --type LineItem --class  ~.domain.Product --cardinality ONE_TO_ONE
 
 

@@ -3,9 +3,7 @@
 
 package com.genmymodel.shoppingcart.web;
 
-import com.genmymodel.shoppingcart.domain.Account;
 import com.genmymodel.shoppingcart.domain.Customer;
-import com.genmymodel.shoppingcart.domain.WebUser;
 import com.genmymodel.shoppingcart.web.CustomerController;
 import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;
@@ -88,8 +86,6 @@ privileged aspect CustomerController_Roo_Controller {
     
     void CustomerController.populateEditForm(Model uiModel, Customer customer) {
         uiModel.addAttribute("customer", customer);
-        uiModel.addAttribute("accounts", Account.findAllAccounts());
-        uiModel.addAttribute("webusers", WebUser.findAllWebUsers());
     }
     
     String CustomerController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

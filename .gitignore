@@ -8,3 +8,15 @@
 .tmp/model_*.xmi
 
 model_*.xmi
+
+bin/
+
+bin/*
+
+bin/**
+
+target/
+
+target/*
+
+target/**
