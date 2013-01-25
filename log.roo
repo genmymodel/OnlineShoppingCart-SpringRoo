@@ -1,0 +1,36 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 18:13:09
+project --topLevelPackage com.genmymodel.shoppingcart --projectName com.genmymodel.shoppingcart
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+logging setup --level INFO
+// script --file setup.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 18:13:11
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 18:13:14
+enum type --class ~.reference.UserState
+enum constant --name MyNew
+enum constant --name Active
+enum constant --name Banned
+enum type --class ~.reference.OrderStatus
+enum constant --name MyNew
+enum constant --name MyOld
+enum constant --name Shipped
+enum constant --name Delivered
+enum constant --name Closed
+entity jpa --class ~.domain.Customer --sequenceName CUSTOMER_SEQ
+field string --fieldName address --notNull
+field string --fieldName email --notNull
+field string --fieldName phone --notNull
+entity jpa --class ~.domain.Payment --sequenceName PAYMENT_SEQ
+field string --fieldName details --notNull
+field date --fieldName paidDate --type java.util.Date --notNull
+// [failed] script --file entities.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 18:13:17
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-01-25 18:13:19
+web mvc setup
+web mvc all --package ~.web
+web mvc finder all
+web mvc language --code en
+// script --file webmvc.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-01-25 18:13:24
